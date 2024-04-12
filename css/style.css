@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Charm";
+  src: url(/fonts/Charm-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Semibold";
+  src: url(/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+/* первая секция */
+
+.first-section {
+  height: 750px;
+  background-image: url(/images/background-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.nav-container {
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  padding-top: 10px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-container li {
+  margin-right: 64px;
+}
+
+.nav-list li:last-child {
+  margin-right: 176px;
+}
+
+.shop-img img {
+  width: 40px;
+}
+
+.nav-container a {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-family: "Montserrat-Semibold";
+}
+
+.first-section-main-wrap {
+  padding: 0 120px;
+  padding-top: 230px;
+}
+
+.first-section-main-wrap h1 {
+  font-size: 76px;
+  line-height: 148.7px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Charm";
+}
+
+.first-section-main-wrap p {
+  font-size: 40px;
+  line-height: 48.76px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 36px;
+  font-family: "Montserrat-Medium";
+}
+
+.first-section-main-wrap button {
+  padding: 13px 20px 13px 20px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Montserrat-Semibold";
+  border-radius: 4px;
+}
+
+/* Вторая секция */
+
+.second-section {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.new-section {
+  height: 0;
+  width: 100%;
+  transition: 1s;
+}
+
+.second-container {
+  padding-bottom: 80px;
+}
+
+.second-section-top-wrapper {
+  padding-top: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.second-section-top-wrapper span {
+  font-size: 40px;
+  line-height: 48px;
+  color: rgba(186, 93, 44, 1);
+  font-family: "Montserrat-bold";
+}
+
+.featured {
+  font-size: 40px;
+  color: rgba(34, 34, 34, 1);
+  line-height: 48px;
+  text-decoration: none;
+  font-family: "Montserrat-bold";
+}
+
+/* карточки */
+
+.second-section-main-wrapper {
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 387px);
+  grid-template-rows: 278px;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 51px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+}
+
+.img {
+  margin-bottom: 24px;
+}
+
+.name {
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-family: "Montserrat-bold";
+}
+
+.price {
+  color: rgba(34, 34, 34, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-family: "Montserrat-bold";
+}
+
+.products-btn {
+  padding: 12px 20px 12px 20px;
+  border-radius: 4px;
+  background-color: rgba(186, 93, 44, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Montserrat-Semibold";
+  border: none;
+}
+
+/* Третья секция */
+
+.third-section {
+  transition: 1s;
+  overflow: hidden;
+  height: 0;
+}
+
+.third-section-navbar {
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.third-section-navbar a {
+  font-family: "Montserrat-Semibold";
+}
+
+.third-section-navbar a {
+  color: #000;
+}
+
+.third-section-navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.top-wrap-nav-text {
+  display: flex;
+  align-items: center;
+  height: 160px;
+  background-color: rgba(241, 245, 248, 1);
+  padding: 0 120px;
+  padding-top: 95px;
+}
+
+.top-wrap-nav-text h2,
+span {
+  color: rgba(35, 82, 117, 1);
+  font-family: "Montserrat-Semibold";
+}
+
+.nav-wrap {
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  transition: 1s;
+  display: flex;
+  justify-content: end;
+  background-color: white;
+  left: 0;
+  overflow-wrap: normal;
+  width: 0;
+}
+
+.main-wrap-nav-text {
+  padding-right: 15px;
+}
+
+.search {
+  background-color: rgba(241, 245, 248, 1);
+  padding: 10px 16px 10px 16px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat-regular";
+  font-size: 14px;
+  color: rgba(35, 82, 117, 1);
+  border-radius: 4px;
+  margin-right: 25px;
+}
+
+.nav-close {
+  font-size: 30px;
+}
+
+.main-wrap-nav-text li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.main-wrap-nav-text a {
+  text-decoration: none;
+  font-family: "Montserrat-regular";
+  color: rgba(35, 82, 117, 1);
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.third-section-card-box {
+  transition: 1s;
+}
+
+.nav-show {
+  font-size: 31px;
+  font-family: "Montserrat-Medium";
+  margin-right: 20px;
+}
+
+.second-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 387px);
+  grid-template-rows: 278px;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 51px;
+  flex-wrap: wrap;
+}
+
+.about-main-wrap {
+  padding-bottom: 50px;
+}
+
+.about-main-wrap p {
+  color: rgba(35, 82, 117, 1);
+  font-size: 18px;
+  line-height: 21.6px;
+  font-family: "Montserrat-regular";
+  max-width: 934px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 90px;
+}
+
+.history {
+  margin-bottom: 80px;
+}
+
+.about-container {
+  height: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  transition: 1s;
+  bottom: 0;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.about-navbar {
+  display: none;
+}
+
+/* info */
+.info-container {
+  height: 100%;
+  width: 0;
+
+  right: 0;
+}
+
+.info-main-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  margin-right: 40px;
+}
+
+.left,
+.right {
+  width: 512px;
+  height: 333px;
+}
+
+.info-name {
+  font-family: "Montserrat-bold";
+  font-size: 25px;
+  color: rgba(34, 34, 34, 0.84);
+}
+
+.info-marcos {
+  font-size: 22px;
+  color: rgba(35, 82, 117, 0.5);
+  font-family: "Charm";
+  margin-bottom: 23px;
+}
+
+.info-price {
+  color: rgba(35, 82, 117, 1);
+  font-size: 18px;
+  font-family: "Montserrat-bold";
+  margin-bottom: 23px;
+}
+
+.info-description {
+  color: rgba(35, 82, 117, 1);
+  font-size: 14.5px;
+  line-height: 18.5px;
+  font-family: "Montserrat-medium";
+  margin-bottom: 23px;
+}
+
+.add-to-bag {
+  border: none;
+  background-color: rgba(186, 93, 44, 1);
+  color: white;
+  border-radius: 4px;
+  width: 130px;
+  height: 35px;
+  font-size: 14px;
+  font-family: "Montserrat-Semibold";
+}
+
+.info-list ul {
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  font-size: 26px;
+  margin-right: 24px;
+  margin-top: 3px;
+  font-family: "Montserrat-Semibold";
+}
+
+.add {
+  border: none;
+  background-color: rgba(35, 82, 117, 1);
+  color: white;
+  padding: 11px 16px 11px 16px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat-regular";
+  font-size: 14px;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input-wrapper {
+  position: relative; /* Устанавливаем контекст позиционирования */
+  margin-top: 20px; /* Добавляем отступ сверху для визуального разделения, если нужно */
+}
+
+.top-wrap-Modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addForm {
+  padding-top: 20px;
+}
+
+.inp-wrapper {
+  position: absolute; /* Позиционируем лейбл относительно его родительского .input-wrapper */
+  top: -10px; /* Поднимаем над input */
+  left: 0; /* Выравниваем по левому краю */
+  background-color: white;
+  padding: 0 4px; /* Небольшой отступ слева и справа */
+  background-color: white;
+  font-size: 0.75em; /* Уменьшаем размер шрифта */
+  color: #666; /* Цвет текста */
+  letter-spacing: 0.36px;
+  font-family: "Montserrat-regular";
+}
+
+.addModal {
+  padding: 20px;
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 370px;
+  height: 450px;
+}
+
+.addModal-main-wrap {
+  width: 92.5%;
+}
+
+.addForm input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: "Montserrat-regular";
+  font-size: 0.8em;
+}
+
+.nav-input {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  margin-bottom: 23px;
+  outline: none;
+  padding: 0 12px;
+}
+
+.height-inp {
+  resize: none;
+  height: 46px;
+  width: 100%;
+  padding: 16px 12px;
+}
+
+.addModal-title {
+  font-family: "Montserrat-regular";
+  font-weight: 400;
+}
+
+.close-addModal {
+  font-family: "Montserrat-regular";
+  font-size: 30px;
+}
+
+.save {
+  border: none;
+  background-color: transparent;
+  font-family: "Montserrat-regular";
+  background-color: rgba(35, 82, 117, 1);
+  padding: 11px 16px 11px 16px;
+  color: white;
+  border-radius: 4px;
+}
+
+.shop-img {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat-regular";
+  font-size: 13px;
+  left: 22px;
+  top: -3px;
+  background-color: rgba(186, 93, 44, 1);
+  border-radius: 10px;
+}
+
+.bag-container {
+  width: 0px;
+  position: fixed;
+  padding: 20px 28px;
+  background-color: white;
+  top: 0;
+  z-index: 4;
+  transition: 1s;
+  right: -100px;
+  height: 100%;
+}
+
+.bag-title {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Charm";
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bag-box {
+  width: 100%;
+}
+
+.bag-main-wrap {
+  min-height: 475px;
+}
+
+.nameBag {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat-regular";
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.divRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 50%;
+}
+
+.priceBag {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat-Semibold";
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.card-bag {
+  display: flex;
+}
+
+.divLeft {
+  width: 128px;
+  height: 90px;
+  margin-right: 16px;
+}
+
+.divLeft img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.del-bag-card {
+  font-family: "Montserrat-regular";
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: -7px;
+}
+
+.cover {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.23);
+  position: fixed;
+  z-index: 3;
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  color: rgba(186, 93, 44, 1);
+  border: 3px solid rgba(186, 93, 44, 1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat-Semibold";
+  font-size: 16px;
+}
+
+.result {
+  font-size: 18px;
+  padding: 0 12px;
+  font-family: "Montserrat-Semibold";
+}
+
+.divBottom {
+  display: flex;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(105, 105, 105, 1);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.volume {
+  font-family: "Montserrat-regular";
+  font-size: 15px;
+}
+
+.span-volume {
+  font-family: "Montserrat-regular";
+  font-size: 15px;
+}
+
+.total {
+  font-family: "Charm";
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
